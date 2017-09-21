@@ -2448,12 +2448,7 @@
 			}
 
 			.column:nth-child(2) {
-				font-weight: 900;
-				line-height: 1.5;
-				font-size: .8em;
-				margin: 0 0 2em 0;
-				text-transform: uppercase;
-				letter-spacing: 0.35em;
+				font-weight: 600;
 			}
 
 /* Standings Table Edits - Mobile */
@@ -2469,10 +2464,6 @@
 		        tbody
 		        {
 		        	font-size: 14px;
-		        }
-
-		        .team {
-		        	width: 36px;
 		        } 
 
 		    }
