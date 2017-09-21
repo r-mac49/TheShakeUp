@@ -7,7 +7,6 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-
 /* Reset */
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -1611,6 +1610,10 @@
 		width: device-width;
 	}
 
+	body {
+		-ms-overflow-style: scrollbar;
+	}
+
 	@media screen and (max-width: 480px) {
 
 		html, body {
@@ -3200,210 +3203,6 @@
 			}
 
 		}
-
-/* Ryan Matchup Page Edits */
-
-		.headertitle {
-			padding: 6px;
-			background: #e7e7e7;
-		}
-		
-		.matchupicon {
-			display: inline;
-			width: 1em;
-			height: 1em;
-		}
-
-		#gridtitle {
-			padding-left: 10px;
-		}
-
-		.matchupsgrid {
-			padding-left: 0px;
-		}
-
-		.matchup-box {
-			display: flex;
-			border-top: solid 1px;
-			border-color: #e7e7e7;
-		}
-
-		.m_row_left {
-			width: 50%;
-			padding-top: 6px;
-			padding-bottom: 6px;
-			border-right-style: solid;
-      		border-right-width: 1px;
-      		border-color: #e7e7e7;
-
-		}
-
-		.m_row_right {
-			width: 50%;
-			padding-top: 6px;
-			padding-bottom: 6px;
-		}
-
-		.pointsbox_left {
-			display: block;
-			float: right;
-			padding-right: 15px;
-			text-align: right;
-			width: 25%;
-		}
-
-		.pointsbox_right {
-			display: block;
-			float: left;
-			padding-left: 15px;
-			text-align: left;
-			width: 25%;
-		}
-
-		.points_left {
-			font-size: 20px;
-			font-weight: 600;
-			color: #333;
-		}
-
-		.points_right {
-			font-size: 20px;
-			font-weight: 600;
-			color: #333;
-		}
-
-		.projected_left {
-			font-size: 15px
-		}
-
-		.projected_right {
-			font-size: 15px
-		}
-
-		.teambox_left {
-			display: flex;
-			width: 75%;
-			text-align: right;
-		}
-
-		.teambox_right {
-			display: flex;
-			width: 75%;
-			text-align: left;
-		}
-
-		.team_record_left {
-			display: inline-block;
-			flex: 1;
-			padding-top: 4px;
-			padding-right: 10px;
-			vertical-align: top;
-			text-align: right;
-		}
-
-		.team_record_right {
-			display: inline-block;
-			padding-top: 4px;
-			padding-left: 10px;
-			vertical-align: top;
-			text-align: left;
-		}
-
-		.team_left {
-			margin: 0px;
-		}
-
-		.team_right {
-			margin: 0px;
-		}
-
-		.logo_left {
-			display: inline-block;
-			border-radius: 50%;
-			height: 55px;
-			width: 55px;
-		}
-
-		.logo_right {
-			display: inline-block;
-			border-radius: 50%;
-			height: 55px;
-			width: 55px;
-		}
-
-
-/* Ryan Macthup Page - Mobile */
-
-		@media only screen and (max-width: 450px) {
-				.matchup-box {
-					display: block;
-					border: solid 4px;
-				}
-
-				.m_row_left {
-					width: 100%;
-					border-right-style: none;
-				}
-
-				.m_row_right {
-					display: table;
-					border-top: solid 1px;
-					border-color: #e7e7e7;
-					width: 100%;
-				}
-
-				.pointsbox_right {
-					display: block;
-					float: right;
-					padding-right: 15px;
-					text-align: right;
-					width: 25%;
-				}
-
-				.teambox_right {
-					display: inline-block;
-					width: 75%;
-					text-align: left;
-				}
-
-				.team_record_right {
-					display: inline-block;
-					padding-left: 0px;
-					padding-top: 4px;
-					vertical-align: top;
-					text-align: left;
-				}
-
-				.team_record_left {
-					text-align: left;
-				}
-
-				.logo_right {
-					float: right;
-					width: 40px;
-					height: 40px;
-				}
-
-				.logo_left {
-					width: 40px;
-					height: 40px;
-				}
-
-				.record_left {
-					font-size: 15px;
-				}
-
-				.record_right {
-					font-size: 15px;
-				}
-
-				h4 {
-					font-size: 11px;
-				}
-	
-		    }
-
-
 
 /* Footer */
 

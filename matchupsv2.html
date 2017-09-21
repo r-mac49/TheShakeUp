@@ -58,11 +58,11 @@
 									<div class="header">
 										<div class="headertitle">
 											<img class="matchupicon" src="images/trophy.png">
-											<span id="gridtitle"> Weekly Matchups</span>
+											<span> Weekly Matchups</span>
 										</div>
 									</div>
 
-									<ul class="matchupsgrid">
+									<ul class="matchups grid">
 										<li id="matchup1" class="matchup-box"></li>
 										<li id="matchup2" class="matchup-box"></li>
 										<li id="matchup3" class="matchup-box"></li>
@@ -93,89 +93,46 @@
 			    
 			  function showInfo(data, tabletop) {
 			    
-			    // Matchup - Left
+			    // Matchup 1
 			    $.each( tabletop.sheets("matchupsDATA_v2").all(), function(i, matchup ) {
 
-			      var matchup_li = $('<div class="m_row_left"></div>')
-			      matchup_li.append("<div class='pointsbox_left'><div class='points_left'>" + matchup.points + "</div>" + "<div class='projected_left'>" + matchup.projected + "</div>");
-			      matchup_li.append("<div class='teambox_left'><div class='team_record_left'><h4 class='team_left'>" + matchup.team + "</h4>" + "<div class='record_left'>" + matchup.record + "</div>" + "</div>" + "<img class='logo_left' src='" + matchup.logo + "'></img>" + "</div"); 
+			      var matchup_li = $('<div class="m_row"><h4 class="team">' + matchup.team + '</h4></div>')
+			      matchup_li.append("<img class='logo' src='" + matchup.logo + "'></img>");
+			      matchup_li.append("<div class='points'>" + matchup.points + "</div>");
+			      matchup_li.append("<div class='projected'>" + matchup.projected + "</div>");
+			      matchup_li.append("<div class='record'>" + matchup.record + "</div>");
 
-			      if (i == 0 ) {
+			      if (i == 0 || i == 1 ) {
 
 			      matchup_li.appendTo("#matchup1");
 
 			      }
 
-			      if (i == 2 ) {
+			      if (i == 2 || i == 3 ) {
 
 			      matchup_li.appendTo("#matchup2");
 
 			      }
 
-			      if (i == 4 ) {
+			      if (i == 4 || i == 5 ) {
 
 			      matchup_li.appendTo("#matchup3");
 
 			      }
 
-			      if (i == 6 ) {
+			      if (i == 6 || i == 7 ) {
 
 			      matchup_li.appendTo("#matchup4");
 
 			      }
 
-			      if (i == 8 ) {
+			      if (i == 8 || i == 9 ) {
 
 			      matchup_li.appendTo("#matchup5");
 
 			      }
 
-			      if (i == 10 ) {
-
-			      matchup_li.appendTo("#matchup6");
-
-			      }
-
-			      })
-
-			      // Matchup - Right
-			    $.each( tabletop.sheets("matchupsDATA_v2").all(), function(i, matchup ) {
-
-			      var matchup_li = $('<div class="m_row_right"></div>')
-			      matchup_li.append("<div class='pointsbox_right'><div class='points_right'>" + matchup.points + "</div>" + "<div class='projected_right'>" + matchup.projected + "</div>");
-			      matchup_li.append("<div class='teambox_right'>" + "<img class='logo_right' src='" + matchup.logo + "'></img>" + "<div class='team_record_right'><h4 class='team_right'>" + matchup.team + "</h4>" + "<div class='record_right'>" + matchup.record + "</div>" + "</div>" + "</div");
-
-			      if (i == 1 ) {
-
-			      matchup_li.appendTo("#matchup1");
-
-			      }
-
-			      if (i == 3 ) {
-
-			      matchup_li.appendTo("#matchup2");
-
-			      }
-
-			      if (i == 5 ) {
-
-			      matchup_li.appendTo("#matchup3");
-
-			      }
-
-			      if (i == 7 ) {
-
-			      matchup_li.appendTo("#matchup4");
-
-			      }
-
-			      if (i == 9 ) {
-
-			      matchup_li.appendTo("#matchup5");
-
-			      }
-
-			      if (i == 11 ) {
+			      if (i == 10 || i == 11 ) {
 
 			      matchup_li.appendTo("#matchup6");
 
